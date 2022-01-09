@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Прогноз погоды</title>
+</head>
+
+<body class="has-background-primary" style="height: 100vh;">
+    <div class="container p-5 is-flex is-flex-direction-column is-align-content-center px-5" style="height: 100%;">
+        <h1 class="title is-1">Check the weather around the world</h1>
+        <div class="select">
+            <select id="select" class="is-size-5 " style="width: 100%;">
+                <option   selected value="none"  disabled>Choose the city </option>
+                <option>Moscow</option>
+                <option>Tambov</option>
+                <option>Inzhavino</option>
+                <option>Kiev</option>
+                <option>Minsk</option>
+                <option>Greensboro</option>
+                <option>Vladivostok</option>
+                <option>Berlin</option>
+                <option>Paris</option>
+                <option>Montreal</option>
+                <option>Charlotte</option>
+                <option>London</option>
+         </select>
+
+        </div>
+
+
+
+        <div class="mt-6 is-flex is-justify-content-space-between ">
+            <div>
+                <div id="title" class="is-size-1 animate__animated "></div>
+                <p id="temp" class="is-size-2"></p>
+                <p id="temp-feels" class="is-size-5 "></p>
+            </div>
+            <div>
+                <div id="img" class="animate__delay-1s animate__animated "></div>
+                <span class="is-size-3" id="clouds"></span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
