@@ -12,7 +12,7 @@
     <title>Прогноз погоды</title>
 </head>
 
-<body class="has-background-primary" style="height: 100vh;">
+<body class="has-background-primary" style="min-height: 100vh;">
     <div class="container p-5 is-flex is-flex-direction-column is-align-content-center px-5" style="height: 100%;">
         <h1 class="title is-1">Check the weather</h1>
         <div class="select">
@@ -21,7 +21,7 @@
          </select>
         </div>
 
-        <div class="mt-6 is-flex is-justify-content-space-between ">
+        <div class="mt-6 is-flex is-justify-content-space-between  mb-6">
             <div>
                 <div id="title" class="is-size-1 animate__animated "></div>
                 <p id="temp" class="is-size-2"></p>
@@ -31,14 +31,35 @@
                 <div id="img" class="animate__delay-1s animate__animated "></div>
                 <span class="is-size-3" id="clouds"></span>
             </div>
-
-
         </div>
 
-    </div>
 
-    <script src="js/main_array.js"></script>
-    <script src="js/main.js"></script>
+        <div class="box">
+            <div class="mb-6">
+                <h2 id="news__title" class="mb-3 title is-4 has-text-black has-text-weight-semibold"></h2>
+                <p id="news__descr" class=" has-text-black has-text-weight-semibold is-size-5"></p>
+                <div id="news">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h2 id="news__title2" class="mb-3 title is-4 has-text-black has-text-weight-semibold"></h2>
+                <p id="news__descr2" class=" has-text-black has-text-weight-semibold is-size-5"></p>
+                <div id="news2">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h2 id="news__title3" class="mb-3 title is-4 has-text-black has-text-weight-semibold"></h2>
+                <p id="news__descr3" class=" has-text-black has-text-weight-semibold is-size-5"></p>
+                <div id="news3">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/main_array.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
