@@ -1,4 +1,11 @@
 const select = document.getElementById('select')
+const cityArr = city_names.map(item => {
+   let elem = document.createElement('option')
+   select.append(elem)
+   elem.append(item)
+   return item
+})
+
 select.addEventListener('change',
    function loadWeather() {
       const city = this.value;
@@ -18,6 +25,7 @@ select.addEventListener('change',
          .catch(function () {
          });
    })
+
 
 
 
