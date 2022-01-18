@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
    e.preventDefault()
    let inputVal = input.value.trim()
    const newItem = document.querySelector('#hidden').content.querySelector('.item').cloneNode(true)
-   list.appendChild(newItem)
+   list.prepend(newItem)
    const delBtns = newItem.querySelectorAll('.delete')
    newItem.querySelector('.cell-title').classList.remove('animate__heartBeat') // for animation
    newItem.querySelector('.cell-img').classList.remove('animate__bounce') // for animation
